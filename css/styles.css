@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+header, footer {
+    background: #1C1C1C;
+    color: #FFFFFF;
+    position: relative;
+}
+header p {
+    background: #000000;
+    padding: 5px 15px;
+    font-size: 13px;
+}
+header .logo_top {
+    width: 300px;
+    margin: auto;
+}
+header .rmm.style>ul>li:last-child a{
+    padding: 5px;
+}
+header .multiple_line li{
+    /*width: 200px;*/
+    float: left !important;
+    border: none !important;
+}
+header .menu_top {
+    background: #000000;
+}
+#menu .myMenu li {
+    position: relative;
+    float: left;
+    z-index: 99;
+    letter-spacing: 0.5px;
+    margin: 0 2px;
+    border-bottom: 1px solid transparent;
+}
+#menu .myMenu li ul {
+    display: none;
+}
+.menu_top ul#menu_main {
+    overflow: auto;
+}
+
+main section.block_wrapper_info {
+    padding: 15px 0;
+}
+main .block_wrapper_area {
+    background: url(../img/map.jpg) no-repeat top center;
+    background-size: 82% 100%;
+    padding: 5px 0 50px 0;
+    margin: 15px 0;
+}
+main .block_wrapper_area .block_area_info {
+    border: 2px solid #a29999;
+    margin: 10px 0;
+    z-index: 9999;
+    background: #f3f0f06b;
+    padding: 15px;
+}
+.block_about_title {
+    padding-bottom: 20px;
+}
+main .block_wrapper_area .block_area_title {
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px 0 30px;
+}
+main .block_wrapper_area .block_area_subtitle {
+    font-weight: 900;
+}
+main .block_wrapper_area .block_area_content {
+    color: #e20e0e;
+    padding: 10px 0;
+}
+main section.block_wrapper_about {
+    margin: 15px 0;
+    padding: 15px 0;
+}
+main .block_about_content {
+    height: 200px;
+    background: #dddddd;
+    margin: 0 5px;
+}
+main .block_about_content span{
+    margin: auto;
+}
+main section.block_bottom {
+    border: 2px solid #a29999;
+    padding: 15px 15px 0;
+}
+main .block_bottom_title {
+    font-weight: 900;
+}
+footer.footer_main{
+    background: #1C1C1C;
+}
+footer.footer_main > .row {
+    margin: 0;
+}
+footer .logo_footer{
+    width: 200px;
+    margin-left: 80px;
+}
+footer.footer_main ul.footer_text {
+    padding: 15px;
+}
+footer.footer_main ul li {
+    float: left;
+    padding: 15px 15px 0 0;
+}
+footer.footer_main ul li:last-child {
+    float: left;
+    padding: 15px 0 0 0;
+}
+main .slider-wrapper {
+    /*width: 700px;*/
+    /*margin: auto;*/
+    height: 250px;
+}
+main .slider-wrapper .slider-item-desc{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    font-weight: 500;
+}
+main .slider-wrapper .slider-item-desc a{
+    color: #000000;
+}
+@media only screen and (max-width: 991px) {
+    header {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    header .logo_top {
+        width: 200px;
+        margin: auto;
+        position: relative;
+    }
+    header p {
+        position: absolute;
+        width: 100%;
+        text-align: center !important;
+        bottom: -20px;
+    }
+    header .menu_top {
+        background: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    header .menu_top:hover{
+        cursor: pointer;
+    }
+    main .block_wrapper_area {
+        background-size: 100% 100%;
+    }
+    main .block_about_content {
+        margin: 0;
+    }
+    footer.footer_main ul.footer_text{
+        padding: 0;
+    }
+    footer.footer_main ul li {
+        display: none;
+    }
+    footer .logo_footer {
+        margin: auto;
+    }
+    footer.footer_main ul li:last-child {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    header .rmm-dropdown i, .rmm-submenu.rmm-subview i{
+        position: absolute;
+        top: 25%;
+        right: 40%;
+    }
+    .rmm-submenu.rmm-subview i{
+        left: 4%;
+        top: 18%;
+    }
+    .rmm-submenu.rmm-subview .rmm-back{
+        text-align: left;
+        padding: 0 40px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    main .slider-wrapper{
+        height: auto;
+    }
+    main .slider-wrapper .slider-item-img, main .slider-wrapper .slider-item-desc{
+        float: left;
+    }
+    main .slider-wrapper .slider-item-img{
+        width: 30%;
+    }
+    main .slider-wrapper .slider-item-desc{
+        width: 70%;
+        text-align: left;
+        padding-left: 15px;
+    }
+    main .slider-wrapper .slider-item{
+        overflow: hidden;
+    }
+}
