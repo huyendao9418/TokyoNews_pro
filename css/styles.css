@@ -206,5 +206,6 @@ main .slider-wrapper .slider-item-desc a{
     }
     main .slider-wrapper .slider-item{
         overflow: hidden;
+        margin-bottom: 15px;
     }
 }
