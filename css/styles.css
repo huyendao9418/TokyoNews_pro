@@ -49,7 +49,7 @@ main section.block_wrapper_info {
 }
 main .block_wrapper_area {
     background: url(../img/map.jpg) no-repeat top center;
-    background-size: 82% 100%;
+    background-size: 50% 100%;
     padding: 5px 0 50px 0;
     margin: 15px 0;
 }
@@ -129,6 +129,56 @@ main .slider-wrapper .slider-item-desc{
 main .slider-wrapper .slider-item-desc a{
     color: #000000;
 }
+main .slider-main .slider-main-img-border {
+    height: 245px;
+    margin: auto;
+    width: 100%;
+}
+main .slider-main .slider-main-img-border img {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+}
+main .slider-main {
+    position: relative;
+}
+main #slider-container .button-slider {
+    position: absolute;
+    top: 50%;
+    color: #d4ceced9;
+    cursor: pointer;
+}
+main #slider-container .movePrevCarousel,
+main #slider-container .moveNextCarousel{
+    color: #d4ceced9;
+}
+main #slider-container .prev-button{
+    left: 5%;
+}
+main #slider-container .next-button{
+    right: 5%;
+}
+main .slider-main .slider-main-desc {
+    position: absolute;
+    bottom: 10%;
+    left: 9%;
+    width: 326px;
+    text-align: center;
+    color: #ffffff;
+    background: #00000047;
+    border: 2px solid #e7e6e861;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #1d1c1ca1;
+    padding: 5px;
+}
+@media only screen and (max-width: 1140px) {
+    main #slider-container .prev-button{
+        left: 0;
+    }
+    main #slider-container .next-button{
+        right: 0;
+    }
+}
 @media only screen and (max-width: 991px) {
     header {
         position: relative;
@@ -188,7 +238,15 @@ main .slider-wrapper .slider-item-desc a{
         text-align: left;
         padding: 0 40px;
     }
+
+    main #slider-container .prev-button{
+        left: -2px;
+    }
+    main #slider-container .next-button{
+        right: -2px;
+    }
 }
+
 @media only screen and (max-width: 700px) {
     main .slider-wrapper{
         height: auto;
@@ -207,5 +265,8 @@ main .slider-wrapper .slider-item-desc a{
     main .slider-wrapper .slider-item{
         overflow: hidden;
         margin-bottom: 15px;
+    }
+    main .carousel-fixed-item{
+        display: none;
     }
 }
